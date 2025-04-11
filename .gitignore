@@ -1,0 +1,4 @@
+node_modules/
+__snapshots__/
+.tmp/
+visual-report/
