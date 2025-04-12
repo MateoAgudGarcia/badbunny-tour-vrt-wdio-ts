@@ -38,21 +38,15 @@ jobs:
         if: always()
         run: npm run report:generate
 
-      - name: Prepare Artifact
-        if: always()
-        run: |
-          tar -cvf artifact.tar -C visual-report/report/ .
-
       - name: Setup Pages
         if: always()
         uses: actions/configure-pages@v5
 
       - name: Upload WebdriverIO results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         if: always()
         with:
-          name: github-pages
-          path: artifact.tar
+          path: visual-report/report/
 
       - name: Deploy to GitHub Pages
         if: always()
