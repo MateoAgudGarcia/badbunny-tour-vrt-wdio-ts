@@ -1,0 +1,155 @@
+[
+  {
+    "description": "Homepage - Bad Bunny | Vibee",
+    "data": [
+      {
+        "test": "Verify full page using VRT",
+        "data": [
+          {
+            "description": "Homepage - Bad Bunny | Vibee",
+            "test": "Verify full page using VRT",
+            "tag": "homepage",
+            "instanceData": {
+              "browser": {
+                "name": "chrome",
+                "version": "135.0.7049.85"
+              },
+              "platform": {
+                "name": "windows",
+                "version": "not-known"
+              }
+            },
+            "commandName": "checkFullPageScreen",
+            "framework": "mocha",
+            "boundingBoxes": {
+              "diffBoundingBoxes": [],
+              "ignoredBoxes": []
+            },
+            "fileData": {
+              "actualFilePath": "static/report/actual/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-1500x1100.png",
+              "baselineFilePath": "static/report/baseline/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\homepage-1500x1100.png",
+              "fileName": "homepage-1500x1100.png",
+              "size": {
+                "actual": {
+                  "height": 6280,
+                  "width": 1484
+                },
+                "baseline": {
+                  "height": 6280,
+                  "width": 1484
+                }
+              },
+              "original_actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-1500x1100.png",
+              "original_baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\homepage-1500x1100.png",
+              "actualThumbnail": "static/report/actual/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-1500x1100-VHTMLR-THUMBNAIL.png"
+            },
+            "misMatchPercentage": "0.00",
+            "rawMisMatchPercentage": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Homepage ES - Bad Bunny | Vibee",
+    "data": [
+      {
+        "test": "Verify screen page using VRT",
+        "data": [
+          {
+            "description": "Homepage ES - Bad Bunny | Vibee",
+            "test": "Verify screen page using VRT",
+            "tag": "homepage-es",
+            "instanceData": {
+              "browser": {
+                "name": "chrome",
+                "version": "135.0.7049.85"
+              },
+              "platform": {
+                "name": "windows",
+                "version": "not-known"
+              }
+            },
+            "commandName": "checkScreen",
+            "framework": "mocha",
+            "boundingBoxes": {
+              "diffBoundingBoxes": [],
+              "ignoredBoxes": []
+            },
+            "fileData": {
+              "actualFilePath": "static/report/actual/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-es-1500x1100.png",
+              "baselineFilePath": "static/report/baseline/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\homepage-es-1500x1100.png",
+              "fileName": "homepage-es-1500x1100.png",
+              "size": {
+                "actual": {
+                  "height": 953,
+                  "width": 1484
+                },
+                "baseline": {
+                  "height": 953,
+                  "width": 1484
+                }
+              },
+              "original_actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-es-1500x1100.png",
+              "original_baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\homepage-es-1500x1100.png",
+              "actualThumbnail": "static/report/actual/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-es-1500x1100-VHTMLR-THUMBNAIL.png"
+            },
+            "misMatchPercentage": "0.00",
+            "rawMisMatchPercentage": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Log In - Bad Bunny | Vibee",
+    "data": [
+      {
+        "test": "Verify login container using VRT",
+        "data": [
+          {
+            "description": "Log In - Bad Bunny | Vibee",
+            "test": "Verify login container using VRT",
+            "tag": "main-section-article-block-content",
+            "instanceData": {
+              "browser": {
+                "name": "chrome",
+                "version": "135.0.7049.85"
+              },
+              "platform": {
+                "name": "windows",
+                "version": "not-known"
+              }
+            },
+            "commandName": "checkElement",
+            "framework": "mocha",
+            "boundingBoxes": {
+              "diffBoundingBoxes": [],
+              "ignoredBoxes": []
+            },
+            "fileData": {
+              "actualFilePath": "static/report/actual/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\main-section-article-block-content-1500x1100.png",
+              "baselineFilePath": "static/report/baseline/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\main-section-article-block-content-1500x1100.png",
+              "fileName": "main-section-article-block-content-1500x1100.png",
+              "size": {
+                "actual": {
+                  "height": 292,
+                  "width": 960
+                },
+                "baseline": {
+                  "height": 292,
+                  "width": 960
+                }
+              },
+              "original_actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\main-section-article-block-content-1500x1100.png",
+              "original_baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\main-section-article-block-content-1500x1100.png",
+              "actualThumbnail": "static/report/actual/C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\main-section-article-block-content-1500x1100-VHTMLR-THUMBNAIL.png"
+            },
+            "misMatchPercentage": "0.00",
+            "rawMisMatchPercentage": 0
+          }
+        ]
+      }
+    ]
+  }
+]
