@@ -1,10 +1,24 @@
 # Visual Regression Testing - Bad Bunny Ticket Sales
 
-This project implements Visual Regression Testing (VRT) for Bad Bunny's latest concert ticket sales website using WebdriverIO (WDIO).
-
-## Overview
-
 This Proof of Concept (PoC) demonstrates the capabilities of WebdriverIO for visual regression testing, focusing on the ticket sales platform for Bad Bunny's most recent concert tour.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Technical Stack](#technical-stack)
+- [Features](#features)
+- [Setup](#setup)
+- [Reports](#reports)
+- [Requirements](#requirements)
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone git@github.com:MateoAgudGarcia/badbunny-tour-vrt-wdio-ts.git
+cd badbunny-tour-vrt-wdio-ts
+```
 
 ## Technical Stack
 
@@ -40,21 +54,21 @@ npm run wdio
 There are two ways to view the visual regression test results:
 
 1. Generate the visual report:
+
 ```bash
 npm run report:generate
 ```
 
 2. Open the generated report in your default browser:
+
 ```bash
 npm run report:open
 ```
 
 The test results will be available in the `visual-report` directory, providing detailed visual comparison analysis.
 
-
 ## Requirements
 
 - Node.js 22 or higher
 - Chrome browser
 - TypeScript support
-
