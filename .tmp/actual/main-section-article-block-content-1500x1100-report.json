@@ -1,0 +1,23 @@
+{
+  "description": "Log In - Bad Bunny | Vibee",
+  "test": "Verify login container using VRT",
+  "tag": "main-section-article-block-content",
+  "instanceData": {
+    "browser": { "name": "chrome", "version": "135.0.7049.85" },
+    "platform": { "name": "windows", "version": "not-known" }
+  },
+  "commandName": "checkElement",
+  "framework": "mocha",
+  "boundingBoxes": { "diffBoundingBoxes": [], "ignoredBoxes": [] },
+  "fileData": {
+    "actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\main-section-article-block-content-1500x1100.png",
+    "baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\main-section-article-block-content-1500x1100.png",
+    "fileName": "main-section-article-block-content-1500x1100.png",
+    "size": {
+      "actual": { "height": 292, "width": 960 },
+      "baseline": { "height": 292, "width": 960 }
+    }
+  },
+  "misMatchPercentage": "0.00",
+  "rawMisMatchPercentage": 0
+}

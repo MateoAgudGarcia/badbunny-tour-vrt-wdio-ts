@@ -1,0 +1,36 @@
+{
+  "description": "Homepage - Bad Bunny | Vibee",
+  "test": "Verify full page using VRT",
+  "tag": "homepage",
+  "instanceData": {
+    "browser": { "name": "chrome", "version": "135.0.7049.85" },
+    "platform": { "name": "windows", "version": "not-known" }
+  },
+  "commandName": "checkFullPageScreen",
+  "framework": "mocha",
+  "boundingBoxes": {
+    "diffBoundingBoxes": [
+      { "left": 46, "top": 5203, "right": 1302, "bottom": 5832 },
+      { "left": 46, "top": 690, "right": 1196, "bottom": 924 },
+      { "left": 46, "top": 2596, "right": 1196, "bottom": 2830 },
+      { "left": 46, "top": 6017, "right": 1193, "bottom": 6247 },
+      { "left": 46, "top": 4502, "right": 1196, "bottom": 4736 },
+      { "left": 46, "top": 3549, "right": 1196, "bottom": 3783 },
+      { "left": 46, "top": 1643, "right": 1196, "bottom": 1878 }
+    ],
+    "ignoredBoxes": []
+  },
+  "fileData": {
+    "actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-1500x1100.png",
+    "baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\homepage-1500x1100.png",
+    "diffFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\diff\\homepage-1500x1100.png",
+    "fileName": "homepage-1500x1100.png",
+    "size": {
+      "actual": { "height": 6280, "width": 1484 },
+      "baseline": { "height": 6280, "width": 1484 },
+      "diff": { "height": 6280, "width": 1484 }
+    }
+  },
+  "misMatchPercentage": "24.20",
+  "rawMisMatchPercentage": 24.20239454392501
+}

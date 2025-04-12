@@ -1,5 +1,5 @@
-import { join } from "node:path";
-import type { VisualServiceOptions } from "@wdio/visual-service";
+import { join } from 'node:path';
+import type { VisualServiceOptions } from '@wdio/visual-service';
 
 export const config: WebdriverIO.Config = {
   //
@@ -7,8 +7,8 @@ export const config: WebdriverIO.Config = {
   // Runner Configuration
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
-  runner: "local",
-  tsConfigPath: "./tsconfig.json",
+  runner: 'local',
+  tsConfigPath: './tsconfig.json',
 
   //
   // ==================
@@ -25,7 +25,7 @@ export const config: WebdriverIO.Config = {
   // The path of the spec files will be resolved relative from the directory of
   // of the config file unless it's absolute.
   //
-  specs: ["./test/specs/**/*.ts"],
+  specs: ['./test/specs/**/*.spec.ts'],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -46,7 +46,7 @@ export const config: WebdriverIO.Config = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 10,
+  maxInstances: 1,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -54,7 +54,10 @@ export const config: WebdriverIO.Config = {
   //
   capabilities: [
     {
-      browserName: "chrome",
+      browserName: 'chrome',
+      'goog:chromeOptions': {
+        //args: ['--headless', '--disable-gpu'],
+      },
     },
   ],
 
@@ -65,7 +68,7 @@ export const config: WebdriverIO.Config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: "info",
+  logLevel: 'info',
   //
   // Set specific log levels per logger
   // loggers:
@@ -89,7 +92,7 @@ export const config: WebdriverIO.Config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: "https://badbunnypackages.vibee.com",
+  baseUrl: 'https://badbunnypackages.vibee.com',
   //
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
@@ -107,12 +110,12 @@ export const config: WebdriverIO.Config = {
   // commands. Instead, they hook themselves up into the test process.
   services: [
     [
-      "visual",
+      'visual',
       {
         createJsonReportFiles: true,
-        baselineFolder: join(process.cwd(), "./__snapshots__/"),
-        formatImageName: "{tag}-{width}x{height}",
-        screenshotPath: join(process.cwd(), ".tmp/"),
+        baselineFolder: join(process.cwd(), './__snapshots__/'),
+        formatImageName: '{tag}-{width}x{height}',
+        screenshotPath: join(process.cwd(), '.tmp/'),
       } satisfies VisualServiceOptions,
     ],
   ],
@@ -123,7 +126,7 @@ export const config: WebdriverIO.Config = {
   //
   // Make sure you have the wdio adapter package for the specific framework installed
   // before running any tests.
-  framework: "mocha",
+  framework: 'mocha',
 
   //
   // The number of times to retry the entire specfile when it fails as a whole
@@ -138,12 +141,12 @@ export const config: WebdriverIO.Config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter
-  reporters: ["spec"],
+  reporters: ['spec'],
 
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
   mochaOpts: {
-    ui: "bdd",
+    ui: 'bdd',
     timeout: 60000,
   },
 
@@ -199,8 +202,10 @@ export const config: WebdriverIO.Config = {
    * @param {Array.<String>} specs        List of spec file paths that are to be run
    * @param {object}         browser      instance of created browser/device session
    */
-  // before: function (capabilities, specs) {
-  // },
+  before: async function () {
+    await browser.url(`/${undefined}`);
+    await browser.setWindowSize(1500, 1100);
+  },
   /**
    * Runs before a WebdriverIO command gets executed.
    * @param {string} commandName hook command name

@@ -1,0 +1,206 @@
+[
+  {
+    "description": "Homepage - Bad Bunny | Vibee",
+    "data": [
+      {
+        "test": "Verify full page using VRT",
+        "data": [
+          {
+            "description": "Homepage - Bad Bunny | Vibee",
+            "test": "Verify full page using VRT",
+            "tag": "homepage",
+            "instanceData": {
+              "browser": {
+                "name": "chrome",
+                "version": "135.0.7049.85"
+              },
+              "platform": {
+                "name": "windows",
+                "version": "not-known"
+              }
+            },
+            "commandName": "checkFullPageScreen",
+            "framework": "mocha",
+            "boundingBoxes": {
+              "diffBoundingBoxes": [
+                {
+                  "left": 46,
+                  "top": 5203,
+                  "right": 1302,
+                  "bottom": 5832
+                },
+                {
+                  "left": 46,
+                  "top": 690,
+                  "right": 1196,
+                  "bottom": 924
+                },
+                {
+                  "left": 46,
+                  "top": 2596,
+                  "right": 1196,
+                  "bottom": 2830
+                },
+                {
+                  "left": 46,
+                  "top": 6017,
+                  "right": 1193,
+                  "bottom": 6247
+                },
+                {
+                  "left": 46,
+                  "top": 4502,
+                  "right": 1196,
+                  "bottom": 4736
+                },
+                {
+                  "left": 46,
+                  "top": 3549,
+                  "right": 1196,
+                  "bottom": 3783
+                },
+                {
+                  "left": 46,
+                  "top": 1643,
+                  "right": 1196,
+                  "bottom": 1878
+                }
+              ],
+              "ignoredBoxes": []
+            },
+            "fileData": {
+              "actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-1500x1100.png",
+              "baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\homepage-1500x1100.png",
+              "diffFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\diff\\homepage-1500x1100.png",
+              "fileName": "homepage-1500x1100.png",
+              "size": {
+                "actual": {
+                  "height": 6280,
+                  "width": 1484
+                },
+                "baseline": {
+                  "height": 6280,
+                  "width": 1484
+                },
+                "diff": {
+                  "height": 6280,
+                  "width": 1484
+                }
+              }
+            },
+            "misMatchPercentage": "24.20",
+            "rawMisMatchPercentage": 24.20239454392501
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Homepage ES - Bad Bunny | Vibee",
+    "data": [
+      {
+        "test": "Verify screen page using VRT",
+        "data": [
+          {
+            "description": "Homepage ES - Bad Bunny | Vibee",
+            "test": "Verify screen page using VRT",
+            "tag": "homepage-es",
+            "instanceData": {
+              "browser": {
+                "name": "chrome",
+                "version": "135.0.7049.85"
+              },
+              "platform": {
+                "name": "windows",
+                "version": "not-known"
+              }
+            },
+            "commandName": "checkScreen",
+            "framework": "mocha",
+            "boundingBoxes": {
+              "diffBoundingBoxes": [
+                {
+                  "left": 46,
+                  "top": 694,
+                  "right": 1192,
+                  "bottom": 920
+                }
+              ],
+              "ignoredBoxes": []
+            },
+            "fileData": {
+              "actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\homepage-es-1500x1100.png",
+              "baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\homepage-es-1500x1100.png",
+              "diffFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\diff\\homepage-es-1500x1100.png",
+              "fileName": "homepage-es-1500x1100.png",
+              "size": {
+                "actual": {
+                  "height": 953,
+                  "width": 1484
+                },
+                "baseline": {
+                  "height": 953,
+                  "width": 1484
+                },
+                "diff": {
+                  "height": 953,
+                  "width": 1484
+                }
+              }
+            },
+            "misMatchPercentage": "3.68",
+            "rawMisMatchPercentage": 3.677420997106598
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "Log In - Bad Bunny | Vibee",
+    "data": [
+      {
+        "test": "Verify login container using VRT",
+        "data": [
+          {
+            "description": "Log In - Bad Bunny | Vibee",
+            "test": "Verify login container using VRT",
+            "tag": "main-section-article-block-content",
+            "instanceData": {
+              "browser": {
+                "name": "chrome",
+                "version": "135.0.7049.85"
+              },
+              "platform": {
+                "name": "windows",
+                "version": "not-known"
+              }
+            },
+            "commandName": "checkElement",
+            "framework": "mocha",
+            "boundingBoxes": {
+              "diffBoundingBoxes": [],
+              "ignoredBoxes": []
+            },
+            "fileData": {
+              "actualFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\.tmp\\actual\\main-section-article-block-content-1500x1100.png",
+              "baselineFilePath": "C:\\Users\\GF75 Thin 10SER\\Documents\\ts\\vrt-wdio\\__snapshots__\\main-section-article-block-content-1500x1100.png",
+              "fileName": "main-section-article-block-content-1500x1100.png",
+              "size": {
+                "actual": {
+                  "height": 292,
+                  "width": 960
+                },
+                "baseline": {
+                  "height": 292,
+                  "width": 960
+                }
+              }
+            },
+            "misMatchPercentage": "0.00",
+            "rawMisMatchPercentage": 0
+          }
+        ]
+      }
+    ]
+  }
+]

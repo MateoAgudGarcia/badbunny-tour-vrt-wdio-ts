@@ -1,4 +1,3 @@
 node_modules/
-__snapshots__/
-.tmp/
+.tmp/diff/
 visual-report/
