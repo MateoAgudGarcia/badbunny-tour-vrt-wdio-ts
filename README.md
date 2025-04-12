@@ -1,4 +1,4 @@
-# Visual Regression Testing - Bad Bunny Ticket Sales
+# Visual Regression Testing - Bad Bunny Ticket Sales[![WebdriverIO Visual Regression Tests](https://github.com/MateoAgudGarcia/badbunny-tour-vrt-wdio-ts/actions/workflows/wdio-vrt-deployment.yml/badge.svg)](https://github.com/MateoAgudGarcia/badbunny-tour-vrt-wdio-ts/actions/workflows/wdio-vrt-deployment.yml)
 
 This Proof of Concept (PoC) demonstrates the capabilities of WebdriverIO for visual regression testing, focusing on the ticket sales platform for Bad Bunny's most recent concert tour.
 
