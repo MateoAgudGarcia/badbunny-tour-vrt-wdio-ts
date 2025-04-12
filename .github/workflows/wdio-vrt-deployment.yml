@@ -8,6 +8,12 @@ jobs:
   wdio-run:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -40,9 +46,8 @@ jobs:
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: visual-regression-results
+          name: github-pages
           path: visual-report/report
-          retention-days: 30
 
       - name: Deploy to GitHub Pages
         if: always()
