@@ -25,6 +25,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        env:
+          GITHUB_PAGES: 'true'
 
       - name: Linter and Prettier
         run: |
