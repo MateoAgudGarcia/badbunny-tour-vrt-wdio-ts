@@ -32,6 +32,10 @@ jobs:
         if: always()
         run: npm run report:generate
 
+      - name: Setup Pages
+        if: always()
+        uses: actions/configure-pages@v5
+
       - name: Upload WebdriverIO results
         uses: actions/upload-artifact@v4
         if: always()
@@ -40,10 +44,7 @@ jobs:
           path: visual-report/report
           retention-days: 30
 
-      - name: Deploy results to GitHub Pages
+      - name: Deploy to GitHub Pages
         if: always()
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: visual-report/report
+        id: deployment
+        uses: actions/deploy-pages@v4

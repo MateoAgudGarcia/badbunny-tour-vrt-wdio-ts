@@ -1,5 +1,5 @@
 import { expect, browser } from '@wdio/globals';
-import { CookiesBanner } from '../pageobjects';
+// import { CookiesBanner } from '../pageobjects';
 import { selectorTag } from '../utils/utilities';
 
 describe('Log In - Bad Bunny | Vibee', () => {
@@ -8,9 +8,10 @@ describe('Log In - Bad Bunny | Vibee', () => {
     const selector = 'main section article.block-content';
 
     await browser.url(path);
-
+    /*
     const cookieBanner = new CookiesBanner();
     await cookieBanner.clickAcceptCookies();
+    */
 
     await expect($(selector)).toMatchElementSnapshot(selectorTag(selector));
   });
