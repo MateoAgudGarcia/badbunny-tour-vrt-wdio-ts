@@ -38,6 +38,11 @@ jobs:
         if: always()
         run: npm run report:generate
 
+      - name: Prepare Artifact
+        if: always()
+        run: |
+          tar -cvf artifact.tar -C visual-report/report/ .
+
       - name: Setup Pages
         if: always()
         uses: actions/configure-pages@v5
@@ -47,7 +52,7 @@ jobs:
         if: always()
         with:
           name: github-pages
-          path: visual-report/report
+          path: artifact.tar
 
       - name: Deploy to GitHub Pages
         if: always()
